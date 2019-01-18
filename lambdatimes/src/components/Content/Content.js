@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Carousel from '../Carousel/Carousel';
 import Tabs from './Tabs';
 import Cards from './Cards';
 
@@ -53,6 +54,7 @@ export default class Content extends Component {
           and `selectTabHandler` that includes the function to change the selected tab
         */}
         <Tabs selectedTab={this.state.selected} selectTabHandler={this.changeSelected} tabs={this.state.tabs} />
+        <Carousel />
         <Cards cards={cards} />
       </div>
     );
